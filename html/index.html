@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- version HTML5 -->
+<html lang="fr"> <!-- Mettre la page en français -->
+
+<head>
+    <meta charset="utf-8" /> <!-- gère les accents et caractères spéciaux -->
+
+    <title>Accueil - Abdias Lens Photographie</title> <!-- texte dans l’onglet -->
+
+    <!-- fichiers CSS -->
+    <link rel="stylesheet" href="/style/index.css"> 
+    <link rel="stylesheet" href="/style/style.css"> 
+
+    <!-- chargement plus rapide des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- import des polices utilisées -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- en-tête du site : HEADER -->
+    <header>
+        <nav>
+            
+            <a href="/html/index.html" class="lien-icone">
+                <img src="/images/commun/logo.png" alt="Logo Abdias Lens"  width="80px"/>
+            </a>
+
+            <!-- menu de navigation -->
+            <div>
+                <a href="/html/index.html">Accueil</a>
+                <a href="/html/a-propos.html">À propos</a>
+                <a href="/html/portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- contenu principal -->
+    <main>
+        <!-- Premiere sectoin  -->
+        <section class="accueil-introduction">
+            <div>
+                <h1>Abdias Lens Photographie</h1>
+                <p>
+                    Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis
+                    plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                    qui m’anime : capturer l’essence de chaque instant.
+                </p>
+                <!--UN PROJET  -->
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+            </div>
+
+            <!-- image d'Adbias Raphael -->
+            <img src="/images/index/Abdias_Raphael_Lens.png" alt="Portrait d'Abdias Raphael" width="500px" />
+        </section>
+
+        <!-- DEUXIEME SECTION -->
+        <section class="accueil-photos">
+            <h2>Mon dernier projet</h2>
+
+            <!-- 1ère ligne de 3 photos -->
+            <div>
+                <img src="/images/index/element/element-1.png" alt="Twelve apostles - Australie" />
+                <img src="/images/index/element/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" />
+                <img src="/images/index/element/element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" />
+            </div>
+
+            <!-- 2ème ligne de 3 photos -->
+            <div>
+                <img src="/images/index/element/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande" />
+                <img src="/images/index/element/element-5.png" alt="Milford Sound - Nouvelle-Zélande" />
+                <img src="/images/index/element/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" />
+            </div>
+        </section>
+
+        <!-- section contact (formulaire) -->
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+
+            <form method="get" action="">
+                <!-- ligne avec nom + email -->
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom" />
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="e-mail" name="email" id="email" />
+                    </div>
+                </div>
+
+                <!-- zone pour écrire un message -->
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+
+                <!-- bouton envoyer -->
+                <input type="submit" value="ENVOYER" class="cta" />
+            </form>
+        </section>
+    </main>
+
+    <!-- bas de page -->
+    <footer>
+        <!-- logo en bas qui renvoie à l’accueil -->
+        <a href="index.html" class="lien-icone">
+            <img src="/images/commun/logo.png" alt="Logo Abdias Lens" width="80px" />
+        </a>
+
+        <!-- icônes des réseaux sociaux -->
+        <div>
+            <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                <img src="/images/commun/twitter.png" alt="Logo Twitter" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                <img src="/images/commun/instagram.png" alt="Logo Instagram" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

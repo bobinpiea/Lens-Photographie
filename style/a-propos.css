@@ -1,0 +1,70 @@
+/* CONTENU ENCADRÉ (TEXTE + SERVICES) */
+
+.carre-contenu {
+  border-right: 1px solid #8e86b5; /* bord droit violet clair */
+  border-bottom: 1px solid #8e86b5; /* bord bas violet clair */
+  padding: 50px; /* espace intérieur */
+  width: 50%; /* largeur réduite */
+  margin: auto; /* centré */
+  margin-bottom: 80px; /* espace sous le bloc */
+}
+
+.carre-contenu h2 {
+  margin-top: 30px; /* espace au-dessus du sous-titre */
+}
+
+.carre-contenu ul {
+  margin-top: 30px; /* espace au-dessus de la liste */
+}
+
+.carre-contenu + div {
+  text-align: center; /* bouton centré */
+}
+
+
+/* MAIN */
+
+.a-propos-main {
+  margin: auto; /* centré horizontalement */
+}
+
+
+/* TABLEAU DES TARIFS */
+
+table {
+  color: white;
+  text-align: center;
+  width: 100%; /* prend toute la largeur */
+  border-collapse: collapse; /* pas d’espace entre les bordures */
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid #a5b4fc; /* contour bleu clair */
+}
+
+td {
+  padding: 80px; /* plus grand padding dans les cellules */
+}
+
+
+/* TITRES */
+
+h2 {
+  margin-bottom: 80px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 996px) {
+  .section-tarifs {
+    display: none; /* on masque la partie tarifs sur mobile */
+  }
+}

@@ -1,0 +1,83 @@
+/* PHOTOS */
+
+.portfolio-section-photos {
+  background-color: white; /* fond blanc pour trancher avec le fond du site */
+}
+
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-bottom: 80px;
+}
+
+
+/* GRILLE PAYSAGES */
+
+.grid-paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+  grid-template-rows: 300px 300px 300px; /* 3 lignes de hauteur fixe */
+  gap: 15px; /* espace entre les blocs */
+}
+
+
+/* GRILLE PORTRAITS */
+
+.grid-portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+  grid-template-rows: 300px 300px; /* 2 lignes */
+  gap: 15px;
+}
+
+
+/* IMAGES DANS LES GRILLES */
+
+.grid-paysages img,
+.grid-portraits img {
+  width: 100%; /* prend toute la largeur du bloc */
+  height: 100%; /* prend toute la hauteur */
+  object-fit: cover; /* zoom sans déformer */
+}
+
+
+/* EFFET HOVER */
+
+.lien-conteneur-photo {
+  position: relative; /* position de référence pour le bloc .photo-hover */
+}
+
+.photo-hover {
+  position: absolute; /* prend toute la place du bloc image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex; /* contenu centré */
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* fond noir transparent */
+  display: none; /* invisible au départ */
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex; /* apparaît quand on survole */
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 996px) {
+  .grid-paysages {
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 15px;
+  }
+
+  .grid-portraits {
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 15px;
+  }
+}
